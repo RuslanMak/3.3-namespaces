@@ -14,36 +14,36 @@ require 'autoload.php';
 
 //------------------------------------- Objects---------------------------------------------
 //----------------CAR----------------
-$bmw = new CarClass('BMW', '10', 700);
+$bmw = new \Classes\CarClass('BMW', '10', 700);
 $bmw->changeColor('Blue');
 
-$audi = new CarClass('AUDI', '10', 900);
+$audi = new \Classes\CarClass('AUDI', '10', 900);
 
 //----------------TV-----------------
-$lg = new TV('LG', '', 500);
+$lg = new \Classes\TV('LG', '', 500);
 $lg->diagonal = 42;
 
-$sone = new TV('SONE', '10', 700);
+$sone = new \Classes\TV('SONE', '10', 700);
 $sone->diagonal = 80;
 
 //----------------PEN-----------------
-$parker = new BallPen('Parker', '10', 20);
+$parker = new \Classes\BallPen('Parker', '10', 20);
 $parker->color = 'Black';
 
-$space_pen = new BallPen('Space Pen', 'Black', 70);
+$space_pen = new \Classes\BallPen('Space Pen', 'Black', 70);
 $space_pen->color = 'Black';
 
 //----------------Duck-----------------
-$american_pekin = new Duck('American Pekin', 10, 10);
+$american_pekin = new \Classes\Duck('American Pekin', 10, 10);
 
-$american_black_duck = new Duck('American black duck', '10', 11);
+$american_black_duck = new \Classes\Duck('American black duck', '10', 11);
 $american_black_duck->changeColor('Black');
 
 //----------------Product-----------------
-$cup = new Product('White cup', '10', 10);
+$cup = new \Classes\Product('White cup', '10', 10);
 $cup->category('Cups');
 
-$book = new Product('Health', '10', 8);
+$book = new \Classes\Product('Health', '10', 8);
 $book->category('Books');
 
 

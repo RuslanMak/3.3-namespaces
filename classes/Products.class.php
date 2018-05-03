@@ -2,7 +2,9 @@
 
 //-------------------------------------------MySuperClass-------------------------------------------
 
-abstract class Products implements MyConstruct
+namespace Classes;
+
+abstract class Products implements \MyConstruct
 {
     public $name;
     public $discount;

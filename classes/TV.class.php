@@ -1,6 +1,8 @@
 <?php
 
-class TV extends Products implements MyPrice
+namespace Classes;
+
+class TV extends Products implements \MyPrice
 {
     public $diagonal;
 }

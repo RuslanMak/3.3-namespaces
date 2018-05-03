@@ -1,6 +1,8 @@
 <?php
 
-class Product extends Products implements MyPrice, Category
+namespace Classes;
+
+class Product extends Products implements \MyPrice, \Category
 {
     public function category($category)
     {

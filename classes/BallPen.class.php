@@ -1,6 +1,8 @@
 <?php
 
-class BallPen extends Products implements MyPrice
+namespace Classes;
+
+class BallPen extends Products implements \MyPrice
 {
     public $color;
 }
