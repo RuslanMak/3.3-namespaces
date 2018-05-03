@@ -33,5 +33,5 @@ function myAutoloader($className)
 //}
 
 spl_autoload_register('myAutoloader');
-spl_autoload_register('myAutoloader'); //второй раз для загрузки интерфейса
+spl_autoload_register('myAutoloader'); //второй раз для загрузки интерфейса. Не вижу смысла создавать вторую автозагрузку
 //spl_autoload_register('myAutoloaderForInterface');
