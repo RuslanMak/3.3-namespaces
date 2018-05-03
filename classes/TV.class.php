@@ -2,7 +2,7 @@
 
 namespace Classes;
 
-class TV extends Products implements \MyPrice
+class TV extends Products implements \interfaces\MyPrice
 {
     public $diagonal;
 }

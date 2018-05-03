@@ -4,7 +4,7 @@
 
 namespace Classes;
 
-abstract class Products implements \MyConstruct
+abstract class Products implements \interfaces\MyConstruct
 {
     public $name;
     public $discount;

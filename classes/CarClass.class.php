@@ -2,7 +2,7 @@
 
 namespace Classes;
 
-class CarClass extends Products implements \MyPrice, \ChangeColor
+class CarClass extends Products implements \interfaces\MyPrice, \interfaces\ChangeColor
 {
     private $color = 'White';
     public function changeColor($color)
