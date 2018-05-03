@@ -2,9 +2,6 @@
 
 //-------------------------------------------MySuperClass-------------------------------------------
 
-namespace MySuperClass;
-namespace Interfaces;
-
 abstract class Products implements MyConstruct
 {
     public $name;

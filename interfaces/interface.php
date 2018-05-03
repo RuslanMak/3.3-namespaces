@@ -2,7 +2,7 @@
 
 //-------------------------------------------MyInterface-------------------------------------------
 
-namespace Interfaces;
+//namespace Interfaces;
 
 interface MyConstruct
 {
@@ -23,5 +23,3 @@ interface Category
 {
     public function category($category);
 }
-
-echo "<h1>It is interface</h1>";

@@ -10,13 +10,7 @@
  *
  */
 
-namespace MySuperClass;
-namespace Classes;
-namespace Interfaces;
-
-require_once "interfaces/interface.php";
-require_once 'classes/MySuperClass.php';
-require_once 'classes/classes.php';
+require 'autoload.php';
 
 //------------------------------------- Objects---------------------------------------------
 //----------------CAR----------------
