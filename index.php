@@ -30,7 +30,7 @@ $sone->diagonal = 80;
 $parker = new \Classes\BallPen('Parker', '10', 20);
 $parker->color = 'Black';
 
-$space_pen = new \Classes\BallPen('Space Pen', 'Black', 70);
+$space_pen = new \Classes\BallPen('Space Pen', '', 70);
 $space_pen->color = 'Black';
 
 //----------------Duck-----------------
@@ -46,6 +46,9 @@ $cup->category('Cups');
 $book = new \Classes\Product('Health', '10', 8);
 $book->category('Books');
 
+//----------------Order-----------------
+$order = new \classes\order();
+
 
 //-----------------------------------Echo------------------------------------------------------
 echo "<h2>Car</h2>";
@@ -57,12 +60,12 @@ print_r($audi);
 echo "Price for " . "$audi->name: " . $audi->getPrice() . "<br><br><br>";
 
 //------------TV--------------
-echo "<h2>TV</h2>";
-print_r($lg);
-echo "Price for " . "$lg->name: " . $lg->getPrice() . "<br><br><br>";
+echo "<h2>BallPen</h2>";
+print_r($parker);
+echo "Price for " . "$parker->name: " . $parker->getPrice() . "<br><br><br>";
 
-print_r($sone);
-echo "Price for " . "$sone->name: " . $sone->getPrice() . "<br>";
+print_r($space_pen);
+echo "Price for " . "$space_pen->name: " . $space_pen->getPrice() . "<br>";
 
 //------------Product--------------
 echo "<h2>Product</h2>";
@@ -73,4 +76,15 @@ print_r($book);
 echo "Price for " . "$book->name: " . $book->getPrice() . "<br>";
 
 
+//-----------------------------------Order------------------------------------------------------
+echo "<h2>Cart</h2>";
 
+$order->addProduct($bmw); //добавление товара в корзину
+$order->addProduct($audi); //добавление товара в корзину
+$order->addProduct($space_pen); //добавление товара в корзину
+
+$order->showAllProduct();
+
+echo "<br>";
+echo "<br>";
+echo "<b>Total price: </b>" . $order->totalPrice();
